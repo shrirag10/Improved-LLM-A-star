@@ -1,0 +1,16 @@
+I have completed the implementation of LLM A* and run it on a 10x10 maze to test it out and it maps it out successfully, 
+Next step is to implement cost aware prompting and confidence scoring ,
+
+I have implemented the cost aware prompting and it seems  to work in 10x10 maze while takes a lot of time in 20x20 maze 
+
+
+ Summary: What We've Improved vs. the Research Paper
+Aspect	Original Paper	Your Enhanced Implementation
+Prompt Engineering	Basic prompt with vague instructions	✅ Cost-aware prompting, iteration-style reasoning, clear format constraints
+Waypoint Output Format	Unstructured LLM response prone to parsing failure	✅ Robust regex parsing for both JSON-style and bulleted path formats
+Fallback Mechanism	Complete fallback to A* if LLM fails	✅ Segment-wise fallback ensures LLM usage is maximized
+Waypoint Pruning	Not mentioned or limited in effectiveness	✅ Redundancy pruning using actual A* reachability checks
+Waypoint Filtering	Dense and closely placed points used directly	✅ Filtered out waypoints too close (based on Manhattan distance threshold)
+Robustness	Fragile, often fails with messy outputs	✅ Resilient parsing and exception handling for real-world messy outputs
+Integration	Limited user interaction / testing setups	✅ Interactive start-goal selection + image-based map loading
+Visualization	Static results	✅ Live grid + side-by-side A*/LLM-A* comparison in main.py
