@@ -52,15 +52,15 @@ This project delivers an **efficient**, **explainable**, and **resilient** plann
 ## 🏗️ Project Structure
 
 llm_astar/
-├── main.py # Launcher script with user interaction and visualization
-├── llm_astar.py # Hybrid A* planner logic with segment-wise fallback
-├── llm_interface.py # Prompt formatting + LLM (Ollama) communication + parsing
-├── grid_map.py # Grid structure, obstacle encoding, boundary logic
-├── assets/ # Input maze images
-├── figs/ # Saved plots (node count, path length, logs)
-├── report/ # IEEE-style final report (PDF / LaTeX)
-├── requirements.txt # Python dependencies
-└── README.md # You're here!
+├── main.py                # Launcher script with user interaction and visualization
+├── llm_astar.py           # Hybrid A* planner logic with segment-wise fallback
+├── llm_interface.py       # Prompt formatting + LLM (Ollama) communication + parsing
+├── grid_map.py            # Grid structure, obstacle encoding, boundary logic
+├── assets/                # Input maze images
+├── figs/                  # Saved plots (node count, path length, logs)
+├── report/                # IEEE-style final report (PDF / LaTeX)
+├── requirements.txt       # Python dependencies
+└── README.md  
 
 
 ## 🛠️ Getting Started
